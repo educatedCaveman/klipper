@@ -12,7 +12,7 @@ pipeline {
 
     stages {
         // make new ansible code available to drake
-        stage('deploy klipper configs to octopi') {
+        stage('franken-printer') {
             when { branch 'master' }
             steps {
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/deploy_klipper.yml'
@@ -20,7 +20,7 @@ pipeline {
         }
 
         // make new ansible code available to drake
-        stage('deploy klipper configs to octopi') {
+        stage('voron') {
             when { branch 'voron' }
             steps {
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/deploy_klipper_voron.yml'
