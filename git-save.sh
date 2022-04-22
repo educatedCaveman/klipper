@@ -19,5 +19,5 @@ git commit -m "$cm"
 echo "done!"
 
 echo "pushing changes to GitHub..."
-git push origin master
+git push origin $(git rev-parse --abbrev-ref HEAD)
 echo "done!"
