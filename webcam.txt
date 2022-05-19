@@ -13,7 +13,8 @@
 #
 # Defaults to auto
 #
-camera="usb"
+# camera="usb"
+camera="raspi"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -22,7 +23,7 @@ camera="usb"
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 #
 # camera_usb_options="-r 1280x720 -f 30 -d /dev/v4l/by-id/usb-046d_C270_HD_WEBCAM_48E60D60-video-index0"
-camera_usb_options="-r 1280x720 -f 30"
+# camera_usb_options="-r 1280x720 -f 30"
 
 ### Additional webcam devices known to cause problems with -f
 #
@@ -56,7 +57,7 @@ camera_usb_options="-r 1280x720 -f 30"
 #
 # Defaults to 10fps
 #
-#camera_raspi_options="-fps 10"
+camera_raspi_options="-fps 30"
 
 ### Configuration of camera HTTP output
 #
