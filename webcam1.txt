@@ -13,7 +13,7 @@
 #
 # Defaults to auto
 #
-camera="usb"
+camera="raspi"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -21,7 +21,7 @@ camera="usb"
 #
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 #
-camera_usb_options="-r 1280x720 -f 30 -d /dev/v4l/by-id/usb-046d_0825_831B8E40-video-index0"
+camera_usb_options="-r 1920x1080 -f 30"
 
 ### Additional webcam devices known to cause problems with -f
 #
